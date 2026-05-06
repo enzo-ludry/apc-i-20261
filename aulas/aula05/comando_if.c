@@ -1,0 +1,33 @@
+#include <stdio.h>
+
+int main() {
+    int idade = 0;
+
+    printf("entre com a sua idade: ");
+    scanf("%i", &idade);
+
+    int eh_menor_que_16_anos = idade < 16;
+    int eh_menor_que_18_anos = idade < 18;
+    int eh_maior_que_16_anos = idade >= 16;
+    int eh_maior_que_70_anos = idade >= 70;
+    int eh_maior_que_18_anos = idade >= 18;
+    int eh_menor_que_70_anos = idade < 70;
+
+    if (eh_maior_que_18_anos && eh_menor_que_70_anos) {
+        //printf("com %i anos voce tem que votar!\n", idade);
+    }
+
+    if (eh_menor_que_16_anos) {
+        printf("com %i anos voce naum pode votar!\n", idade);
+    } else if (eh_maior_que_18_anos && eh_menor_que_18_anos) {
+        printf("com %i anos voce pode votar!\n", idade);
+    } else if (eh_maior_que_18_anos && eh_menor_que_70_anos) {
+        printf("com %i anos voce tem que votar!\n", idade);
+    } else if (eh_maior_que_70_anos) {
+        printf("com %i anos voce naum precisa votar!\n", idade);
+    } else {
+        printf("com %i anos voce pode votar!\n",idade);
+    }
+    
+    return 0;
+}
