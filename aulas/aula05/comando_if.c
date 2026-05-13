@@ -13,10 +13,6 @@ int main() {
     int eh_maior_que_18_anos = idade >= 18;
     int eh_menor_que_70_anos = idade < 70;
 
-    if (eh_maior_que_18_anos && eh_menor_que_70_anos) {
-        //printf("com %i anos voce tem que votar!\n", idade);
-    }
-
     if (eh_menor_que_16_anos) {
         printf("com %i anos voce naum pode votar!\n", idade);
     } else if (eh_maior_que_18_anos && eh_menor_que_18_anos) {
