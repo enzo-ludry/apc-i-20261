@@ -75,10 +75,7 @@ int main() {
          tem_letra_a);
         
     char *tem_silva = strstr("joao da silva", "silva");
-    printf("o nome joao da silva tem silva? %s\n", tem_silva);
-
-    *tem_silva = strstr("joao da silva", "SILVA");
-    printf("o nome joao da silva tem silva? %s\n", tem_silva);
+    printf("o nome joao da silva tem silva? %s\n", tem_silva)
 
     return 0;
 }
